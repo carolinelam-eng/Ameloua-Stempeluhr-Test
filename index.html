@@ -1,0 +1,10 @@
+<!doctype html>
+<html lang="de"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Ameloua – Cloud-Test</title><link rel="stylesheet" href="styles.css"></head>
+<body><main><header><div><h1>Ameloua Stoffe</h1><p>Cloud-Test · Nur Lesen · Keine Stempeluhr</p></div><span class="chip">TESTVERSION</span></header>
+<section id="login" class="card"><h2>Administrator-Anmeldung</h2><p>Mit deinem bereits eingerichteten Supabase-Zugang anmelden.</p>
+<form id="loginForm"><label>E-Mail<input type="email" id="email" autocomplete="username" required></label><label>Passwort<input type="password" id="password" autocomplete="current-password" required></label><button>Anmelden</button></form></section>
+<section id="dashboard" hidden><div class="toolbar"><h2>Importierte Daten</h2><button id="logout" class="secondary">Abmelden</button></div><p>Dieser Test zeigt nur Daten an. Es können keine Zeiten geändert oder Stempelvorgänge ausgelöst werden.</p>
+<div id="stats" class="stats"></div><div class="card"><h3>Mitarbeiter</h3><div id="people"></div></div></section>
+<p id="status" role="status"></p><footer>Die bisherige Stempeluhr wird nicht verändert.</footer></main>
+<script type="module" src="app.js"></script></body></html>
